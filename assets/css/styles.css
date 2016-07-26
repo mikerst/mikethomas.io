@@ -1,1 +1,21 @@
-@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+@import 'https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.content {
+  text-align: center;
+}
