@@ -7,7 +7,7 @@ var path        = require("path");
 
 // SERVER
 gulp.task('server', function() {
-  gulp.src('./dist/')
+  gulp.src('./site/')
     .pipe(server({
       host: 'localhost',
       port: 8001,
@@ -32,7 +32,7 @@ gulp.task('watch', function() {
 
 // DEPLOY
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./site/**/*')
     .pipe(ghPages());
 });
 
