@@ -4,15 +4,36 @@
 	<title>Mike Thomas</title>
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>		
+<body>
 
-	<div class="temp">
-		<div class="content">
-			<h1>Mike Thomas</h1>
-			<h2>A designer &amp; writer in London</h2>
-			<h3>:)</h3>
+	<section class="intro">
+		<div class="copy">
+			
+
+			<h1 class="glitch">Mike Thomas is an interdisciplinary designer and writer in London.</h1>
+
+			<p>
+				Currently working for TotallyMoney.com, I've worked with a ridiculously long list of clients over the years. I don't use Dribbble, slay dragons in my sleep, run my own micro-agency called SIGIL. I believe firmly in keeping hearts on sleeves and tongues in cheeks.
+			</p>
+			<p></p>
+			
 		</div>
-	</div>
+
+	</section>
+
 	
+	<script src="assets/js/baffle.js"></script>
+
+	<script>
+		var glitchChars = ["█", "▓", "▒", "░", "█", "▓", "▒", "░", "█", "▓", "▒", "░", "<", ">", "/"];
+    	baffle(".glitch", {
+    		characters: glitchChars,
+    		speed:100
+    	})
+    	.start()
+    	.reveal(1500, 500);
+	</script>
+
 </body>
+
 </html>
