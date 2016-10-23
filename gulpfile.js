@@ -15,14 +15,14 @@ gulp.task('server', function() {
       open: true
     }));
 });
-
+  
 // LESS
 gulp.task('less', function () {
   return gulp.src('./less/styles.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('./assets/css/'));
+    .pipe(gulp.dest('./site/assets/css/'));
 });
 
 // WATCH
