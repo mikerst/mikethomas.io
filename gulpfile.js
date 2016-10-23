@@ -28,7 +28,7 @@ gulp.task('less', function () {
 
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('pages/**/*.+(html|nunjucks)')
+  return gulp.src('./pages/**/*.+(html|nunjucks)')
   // Renders template with nunjucks
   .pipe(nunjucksRender({
       path: ['tpl']
@@ -40,6 +40,7 @@ gulp.task('nunjucks', function() {
 // WATCH
 gulp.task('watch', function() {
 	gulp.watch('./less/**/*.less', ['less']);
+  gulp.watch('./pages/**/*.+(html|nunjucks)', ['nunjucks']);
 })
 
 // DEPLOY
