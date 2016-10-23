@@ -1,0 +1,12 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mike Thomas &ndash; Interdisciplinary designer in London</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	 {% block content %} {% endblock %}
+
+</body>
+</html>

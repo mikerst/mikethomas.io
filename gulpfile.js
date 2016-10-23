@@ -1,8 +1,9 @@
-var gulp 			  = require('gulp');
-var server   		= require('gulp-webserver');
-var less 			  = require('gulp-less');
-var ghPages     = require('gulp-gh-pages');
-var path        = require("path");
+var gulp 			        = require('gulp');
+var server   		      = require('gulp-webserver');
+var less 			        = require('gulp-less');
+var ghPages           = require('gulp-gh-pages');
+var path              = require("path");
+var nunjucksRender    = require('gulp-nunjucks-render');
 
 
 // SERVER
@@ -23,6 +24,17 @@ gulp.task('less', function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(gulp.dest('./site/assets/css/'));
+});
+
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['tpl']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('site'))
 });
 
 // WATCH
