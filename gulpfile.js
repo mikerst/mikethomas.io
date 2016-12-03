@@ -27,20 +27,20 @@ gulp.task('less', function () {
 });
 
 gulp.task('nunjucks', function() {
-  // Gets .html and .nunjucks files in pages
-  return gulp.src('./pages/**/*.+(html|nunjucks)')
-  // Renders template with nunjucks
+  // Gets .html and .tpl files the make up the site content
+  return gulp.src('./pages/**/*.+(html|tpl)')
+  // Renders template with using the various layouts, partials and macros
   .pipe(nunjucksRender({
       path: ['tpl']
     }))
-  // output files in app folder
+  // output files in to the main site folder where stuff gets deployed to
   .pipe(gulp.dest('site'))
 });
 
 // WATCH
 gulp.task('watch', function() {
 	gulp.watch('./less/**/*.less', ['less']);
-  gulp.watch('./pages/**/*.+(html|nunjucks)', ['nunjucks']);
+  gulp.watch('./pages/**/*.+(html|tpl)', ['nunjucks']);
 })
 
 // DEPLOY
