@@ -1,7 +1,11 @@
 <!-- index.nunjucks -->
 {% extends "layouts/main.tpl" %}
 
-{% set meta_title = "Mike Thomas &ndash; Interdisciplinary designer in London" %}
+{% set meta_title = "About Mike" %}
+
+{% import 'macros/navigation.tpl' as nav %}
+
+{{nav.active('about')}}
 
 {% block content %}
 
