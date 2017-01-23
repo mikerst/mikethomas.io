@@ -41,6 +41,7 @@ gulp.task('nunjucks', function() {
 gulp.task('watch', function() {
 	gulp.watch('./less/**/*.less', ['less']);
   gulp.watch('./pages/**/*.+(html|tpl)', ['nunjucks']);
+  gulp.watch('./tpl/**/*.+(html|tpl)', ['nunjucks']);
 })
 
 // DEPLOY

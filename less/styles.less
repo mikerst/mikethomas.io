@@ -1,41 +1,86 @@
+@import "_reset";
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
-	font-size: 16px;
-	font-family: 
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Oxygen-sans,
-		Ubuntu,
-		Cantarell,
-		"Helvetica Neue",
-		sans-serif;
-}
+// Fonts
 
-@padding-small: 1rem;
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
 
-p {
-	margin-bottom: 20px;
+@libre: 'Libre Baskerville', Georgia, serif;
+
+// Colour Palette
+
+@mt-blue: #00aeef;
+
+
+.menu {
+  width: 40%;
+  float:left;
+  position: fixed;
+  background: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/13392120_10157232361540122_5354850467833740236_o.jpg?oh=4dee2d79c7a0e289235cdea271107477&oe=5916FF25');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @media screen and (max-width: 750px) {
+    background: @mt-blue;
+  }
 }
 
 header {
-	color: white;
-	background: #cccccc;
-	padding: @padding-small;
-	h1 {
-		font-size: 1.2rem;
-	}
-}	
-
-section {
-	padding: @padding-small;
-	h2 {
-		font-size: 1rem;
-	}
+  color: white;
+  padding: 3rem;
+  h1 {
+    font-size:2.4rem;
+    margin-bottom: 1.6rem;
+  }
 }
+
+nav {
+  margin-top: auto;
+  padding: 3rem 0;
+  a {
+    display: block;
+    margin: 0;
+    color: white;
+    padding:1rem 3rem;
+    &.active {
+      background: rgba(0,0,0,0.05);
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+main {
+  float: right;
+  width: 60%;
+  padding: 20rem 4rem 2rem;
+
+  h1 {
+    font-size:2.4rem;
+    margin-bottom: 1.6rem;
+    position: relative;
+    padding-top:1rem;
+    &:before {
+      content:" ";
+      position: absolute;
+      top: 0;
+      left: -6rem;
+      width: 6rem;
+      height: 5px;
+      background: @mt-blue;
+    }
+  }
+  p {
+    font-size:20px;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    font-family: @libre;
+  }
+
+}
+

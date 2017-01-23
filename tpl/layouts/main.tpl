@@ -7,15 +7,21 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+	
+	<div class="menu">
+		{% block header %}
+    		{% include "components/header.tpl" %}
+	    {% endblock %}
 
-	{% block header %}
-    	{% include "components/header.tpl" %}
-    {% endblock %}
-
-    {% import 'macros/navigation.tpl' as nav %}
-
-	{% block content %} {% endblock %}
-
+		{% import 'macros/navigation.tpl' as nav %}
+		{{nav.active('about')}}
+	</div>
+	
+	
+	<main>
+		{% block content %} {% endblock %}
+	</main>
+	
 	{% block scripts %}
 		{% include "partials/scripts.tpl" %}
 	{% endblock %}

@@ -1,1 +1,1 @@
-Scripts
+<script src=""></script>

@@ -1,0 +1,16 @@
+<!-- index.nunjucks -->
+{% extends "layouts/main.tpl" %}
+
+{% import 'macros/navigation.tpl' as nav %}
+
+{% set meta_title = "Portfolio" %}
+
+{% block content %}
+
+{{nav.active('home')}}
+
+<h1>Portfolio</h1>
+
+Some work...
+
+{% endblock %}

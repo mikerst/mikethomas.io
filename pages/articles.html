@@ -1,0 +1,34 @@
+<!-- index.nunjucks -->
+{% extends "layouts/main.tpl" %}
+
+
+{% set meta_title = "Articles" %}
+
+{% block content %}
+
+
+<h1>Articles</h1>
+
+<section>
+	<h2>Articles and snippets</h2>
+	<ul>
+		<li>
+			<h3><a href="#">Grabbing and wrapping multiple paras in Sublime</a></h3>
+			<p>Stop adding <code>&lt;p&gt;</code> tags manually!</p>
+		</li>
+		<li><a href="#">Inspirational site of the month</a></li>
+		<li><a href="#">How to: A gulp workflow for designing and developing html emails</a></li>
+		<li><a href="#">Designing the design team</a></li>
+		<li><a href="#">It's OK not to have a blog or speak at conferences</a></li>
+	</ul>
+</section>
+
+<article>
+	<h1>Grabbing and wrapping multiple paras in Sublime	</h1>
+	<p>Select the lines of interst</p>
+	<p>command + shift + L</p>
+	<p>control + shift + W</p>
+	<p>Type your tag</p>
+</article>
+
+{% endblock %}
