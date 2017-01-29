@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ meta_title }}</title>
+	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -13,14 +14,12 @@
     		{% include "components/header.tpl" %}
 	    {% endblock %}
 
-		{% import 'macros/navigation.tpl' as nav %}
-		{{nav.active('about')}}
 	</div>
 	
 	
-	<main>
-		{% block content %} {% endblock %}
-	</main>
+	
+	{% block content %} {% endblock %}
+
 	
 	{% block scripts %}
 		{% include "partials/scripts.tpl" %}

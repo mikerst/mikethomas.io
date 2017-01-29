@@ -6,7 +6,11 @@
 {% block content %}
 
 
+<main>
+	{% import 'macros/navigation.tpl' as nav %}
+	{{nav.active('home')}}
+	<h1>Updates:</h1>
+</main>
 
-<h1>Hello</h1>
 
 {% endblock %}
