@@ -1,0 +1,21 @@
+<!-- index.nunjucks -->
+{% extends "layouts/main.tpl" %}
+
+
+{% set meta_title = "Grabbing and wrapping multiple paras in Sublime" %}
+
+{% block content %}
+
+<main>
+	{% import 'macros/navigation.tpl' as nav %}
+	{{nav.active('articles')}}
+	<h1>Grabbing and wrapping multiple paras in Sublime</h1>
+	<article>
+		<p>Select the lines of interst</p>
+		<p>command + shift + L</p>
+		<p>control + shift + W</p>
+		<p>Type your tag</p>
+	</article>
+</main>
+
+{% endblock %}

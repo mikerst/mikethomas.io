@@ -1,7 +1,7 @@
 <header>
-	<h1>
+	<a class="logo" href="/">
 		Mike Thomas
-	</h1>
+	</a>
 	<p>
 		Multiple-hat-wearing designer, whipper-upper of short fiction and all-round decent gent. 
 	<p>
