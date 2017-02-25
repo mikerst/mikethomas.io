@@ -1,0 +1,25 @@
+// ## Breakpoints ##
+
+// Common sizing variables
+@small: 320px;
+@medium: 768px;
+@large: 1024px;
+@xl: 1376px;
+
+// Ruleset to allow for a very simple, flexible way to apply breakpoints. 
+// Can make use of variables above, or can be used with a custom value
+// 		## Example 
+//		-- Apply styles to situations where the screen is 0px - 320px
+//		-- wide e.g. iphone 5
+// 		.bp(@small, {
+// 			.some-css-here {
+//				color: red
+// 			}
+// 		});
+
+.bp(@breakPoint; @rules) {
+    @media only screen and (min-width: @breakPoint) {
+        @rules();
+    }
+}
+
