@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family:'PT Serif', Georgia, serif;
+	font-weight: 400;
+	color:#2a2a2a;
+	line-height: 1.65;
+}
+.temp {
+	width: 100%;
+	padding: 15px;
+}
+
+p {
+	font-size: 18px;
+	letter-spacing: -.004em;
+	line-height: 1.58;
+}
+p:first-of-type:first-letter {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 56px;
+	font-weight: 700;
+	float: left;
+	line-height: 30px;
+	padding-right: 4px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin: 0;
+}
+p strong {
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: 700;
+}
+h1 {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0 0 20px;
+}
+h2 {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 32px;
+	margin: 0 0 20px;
+	line-height: 1.4;
+}
+h1, a {
+	color:#00aeef;
+}
+/*h1 {
+	position: relative;
+	padding-left: 75px;
+}
+h1:before {
+	position: absolute;
+	content: " ";
+	left:0;
+	width: 50px;
+	height: 50px;
+	background:url(mike.jpg) top left no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}*/
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #4a4a4a;
+}
+a:visited {
+	color: pink;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 699px) {
+
+	.temp {
+		width: 860px;
+		margin: 0 auto 0 50px;
+		padding: 80px;
+	}
+
+	p {
+		font-size: 21px;
+	}
+	p:first-of-type:first-letter {
+		font-size: 70px;
+		padding-right: 8px;
+		padding-top: 22px;
+	}
+	img {
+		
+	}
+}
