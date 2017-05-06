@@ -10,6 +10,7 @@ body {
 	font-family:'PT Serif', Georgia, serif;
 	font-weight: 400;
 	color:#2a2a2a;
+	margin: 0;
 	line-height: 1.65;
 }
 .temp {
@@ -38,15 +39,20 @@ p strong {
 	line-height: inherit;
 	font-weight: 700;
 }
+p.dinkus {
+	text-align: center;
+}
 h1 {
 	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 48px;
+	//font-size: 18px;
+	//letter-spacing: 7px;
+	//text-transform: uppercase;
 	font-weight: 700;
 	margin: 0 0 20px;
 }
 h2 {
 	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 32px;
+	font-size: 24px;
 	margin: 0 0 20px;
 	line-height: 1.4;
 }
@@ -78,12 +84,23 @@ img {
 	width: 100%;
 	height: auto;
 }
+footer {
+	border-top: 5px solid #00aeef;
+	color: grey;
+	font-family: "PT Sans", Arial, sans-serif;
+	padding: 25px 0;
+	margin: 25px 0 0 0;
+}
 @media screen and (min-width: 699px) {
 
 	.temp {
 		width: 860px;
-		margin: 0 auto 0 50px;
+		margin: 0 auto;
 		padding: 80px;
+	}
+
+	header {
+		margin: 0 0 50px 0;
 	}
 
 	p {
@@ -97,4 +114,5 @@ img {
 	img {
 		
 	}
+
 }
