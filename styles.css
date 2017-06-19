@@ -23,7 +23,7 @@ p {
 	letter-spacing: -.004em;
 	line-height: 1.58;
 }
-p:first-of-type:first-letter {
+.intro p:first-letter {
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 56px;
 	font-weight: 700;
@@ -106,7 +106,7 @@ footer {
 	p {
 		font-size: 21px;
 	}
-	p:first-of-type:first-letter {
+	.intro p:first-letter {
 		font-size: 70px;
 		padding-right: 8px;
 		padding-top: 22px;
