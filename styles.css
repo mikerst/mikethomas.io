@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
 html {
   box-sizing: border-box;
 }
@@ -13,8 +14,8 @@ body {
 	margin: 0;
 	line-height: 1.65;
 }
-.temp {
-	width: 100%;
+section {
+	padding: 30px 15px;
 }
 
 p {
@@ -43,11 +44,12 @@ p.dinkus {
 }
 h1 {
 	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 44px;
+	font-size: 125px;
 	letter-spacing: 2px;
 	//text-transform: uppercase;
 	font-weight: 700;
 	margin: 0 0 20px;
+	text-align: center;
 }
 h2 {
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -77,22 +79,41 @@ footer {
 	padding: 25px;
 	text-align: center;
 }
-@media screen and (min-width: 699px) {
+section:nth-child(even) {
+		background-color: #f8f8f8;
+	}
+section.currently {
+	color: white;
+	background-color: #303ab2;
+}
 
-	
+section.skills {
+	color: white;
+	background-color: #2a2a2a;
+}
+@media screen and (min-width: 768px) {
+
 	header {
-		margin: 0 0 50px 0;
+		position: fixed;
+		font-family: 'PT Sans', Arial, sans-serif;	
+		color: black;
+		font-weight: 700;
+		letter-spacing: 1;
+		top: 0;
+		left: 0;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		background:rgba(255,255,255,.75);
 	}
 
 	section {
+		padding: 0;
 		display: flex;
 		height: 100%;
 		align-items: center;
 	}
 
-	section:nth-child(even) {
-		background-color: #f8f8f8;
-	}
+	
 
 	.content {
 		margin: 0 auto;
