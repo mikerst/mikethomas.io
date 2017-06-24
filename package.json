@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/mikerst/mikethomas.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.12",
+    "browsersync": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }
