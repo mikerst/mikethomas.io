@@ -27,10 +27,22 @@ gulp.task('compile-css', function() {
 		.pipe(less())
 		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./'));
+		.pipe(gulp.dest('./'))
+		.pipe(browserSync.reload({
+	      stream: true
+	    }))
 })
 
-gulp.task('watch', function(){
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    },
+     port: 1234
+  })
+})
+
+gulp.task('watch', ['browserSync', 'compile-css'], function(){  // We'll also want to make sure sass runs before watch so the CSS will already be the latest whenever we run a Gulp command.
   gulp.watch('less/*.less', ['compile-css']); 
 })
 
