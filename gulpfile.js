@@ -42,7 +42,7 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('watch', ['browserSync', 'compile-css'], function(){  // We'll also want to make sure sass runs before watch so the CSS will already be the latest whenever we run a Gulp command.
+gulp.task('watch', ['browserSync', 'compile-css'], function(){ 
   gulp.watch('less/*.less', ['compile-css']); 
 })
 
