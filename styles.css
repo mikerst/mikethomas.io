@@ -404,8 +404,6 @@ body {
   font-family: 'PT Serif', Georgia, serif;
   font-weight: 400;
   color: #2a2a2a;
-  margin: 0;
-  line-height: 1.65;
 }
 section {
   padding: 30px 15px;
@@ -430,9 +428,6 @@ p strong {
   font-size: inherit;
   line-height: inherit;
   font-weight: 700;
-}
-p.dinkus {
-  text-align: center;
 }
 h1 {
   font-family: 'PT Sans', Arial, sans-serif;
@@ -464,7 +459,6 @@ img {
   height: auto;
 }
 footer {
-  border-top: 5px solid #303ab2;
   color: grey;
   font-family: "PT Sans", Arial, sans-serif;
   padding: 25px;

@@ -14,6 +14,8 @@ var sourcemaps = require('gulp-sourcemaps'); // Devtools-friendly addition for i
 var sourcemaps = require('gulp-sourcemaps'); // Devtools-friendly addition for inspecting niceness
 var browserSync = require('browser-sync').create(); // For auto-reloading the browser
 
+var plumber = require('gulp-plumber');
+
 // Basic task syntax for ref
 //gulp.task('task-name', function() {
   // Do stuff here
@@ -23,6 +25,7 @@ var browserSync = require('browser-sync').create(); // For auto-reloading the br
 // Task to compile css from less, provide a source map and autoprefix
 gulp.task('compile-css', function() {
 	return gulp.src('./less/styles.less')
+	    .pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(less())
 		.pipe(autoprefixer())
