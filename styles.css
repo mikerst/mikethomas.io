@@ -405,16 +405,16 @@ body {
   font-weight: 400;
   color: #2a2a2a;
 }
+@media only screen and (min-width: 950px) {
+  body {
+    border: 10px solid #f9f9f9;
+  }
+}
 section {
   padding: 30px 15px;
 }
-.body-text {
-  font-size: 1.8em;
-  letter-spacing: -0.004em;
-  line-height: 1.58;
-}
 p {
-  font-size: 1.8em;
+  font-size: 18px;
   letter-spacing: -0.004em;
   line-height: 1.58;
 }
@@ -451,6 +451,9 @@ a {
 a:visited {
   color: pink;
 }
+a:hover {
+  color: #333333;
+}
 li {
   margin-bottom: 0.4em;
   line-height: 1.4;
@@ -464,6 +467,7 @@ footer {
   font-family: "PT Sans", Arial, sans-serif;
   padding: 25px;
   text-align: center;
+  background: #f9f9f9;
 }
 @media only screen and (min-width: 530px) {
   .content {
@@ -487,7 +491,7 @@ header {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  padding: 30px 0;
+  padding: 60px 0 30px;
 }
 .mugshot {
   width: 4rem;

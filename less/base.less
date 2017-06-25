@@ -17,20 +17,23 @@
 body {
 	font-family:'PT Serif', Georgia, serif;
 	font-weight: 400;
-	color:#2a2a2a;
+	color: #2a2a2a;
+	@media @large-up {
+		border: 10px solid #f9f9f9;
+	}
 }
 section {
 	padding: 30px 15px;
 }
 
 .body-text {
-	font-size: 1.8em;
-	letter-spacing: -.004em;
-	line-height: 1.58;
+	
 }
 
 p {
-	.body-text;
+	font-size: 18px;
+	letter-spacing: -.004em;
+	line-height: 1.58;
 }
 
 .intro p:first-child:first-letter {
@@ -65,10 +68,13 @@ a {
 	text-decoration: none;
 	border-bottom: 1px dotted #4a4a4a;
 }
+
 a:visited {
 	color: pink;
 }
-
+a:hover {
+	color: #333333;
+}
 li {
 	margin-bottom: 0.4em;
 	line-height: 1.4;
@@ -82,6 +88,7 @@ footer {
 	font-family: "PT Sans", Arial, sans-serif;
 	padding: 25px;
 	text-align: center;
+	background: #f9f9f9;
 }
 
 
