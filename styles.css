@@ -475,19 +475,7 @@ section.skills {
   color: white;
   background-color: #2a2a2a;
 }
-@media screen and (min-width: 768px) {
-  header {
-    position: fixed;
-    font-family: 'PT Sans', Arial, sans-serif;
-    color: black;
-    font-weight: 700;
-    letter-spacing: 1;
-    top: 0;
-    left: 0;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.75);
-  }
+@media only screen and (min-width: 530px) {
   section {
     padding: 0;
     display: -webkit-box;
@@ -509,6 +497,21 @@ section.skills {
     font-size: 70px;
     padding-right: 8px;
     padding-top: 22px;
+  }
+}
+@media only screen and (min-width: 530px) {
+  header {
+    position: fixed;
+    font-family: 'PT Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 

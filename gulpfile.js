@@ -13,7 +13,7 @@ var autoprefixer = require('gulp-autoprefixer'); // Save time, output better css
 var sourcemaps = require('gulp-sourcemaps'); // Devtools-friendly addition for inspecting niceness
 var sourcemaps = require('gulp-sourcemaps'); // Devtools-friendly addition for inspecting niceness
 var browserSync = require('browser-sync').create(); // For auto-reloading the browser
-
+// Dealing with errors in the pipeline
 var plumber = require('gulp-plumber');
 
 // Basic task syntax for ref
