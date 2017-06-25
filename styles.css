@@ -413,7 +413,7 @@ p {
   letter-spacing: -0.004em;
   line-height: 1.58;
 }
-.intro p:first-letter {
+.intro p:first-child:first-letter {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 56px;
   font-weight: 700;
@@ -428,14 +428,6 @@ p strong {
   font-size: inherit;
   line-height: inherit;
   font-weight: 700;
-}
-h1 {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 125px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  margin: 0 0 20px;
-  text-align: center;
 }
 h2 {
   font-family: 'PT Sans', Arial, sans-serif;
@@ -464,28 +456,7 @@ footer {
   padding: 25px;
   text-align: center;
 }
-section:nth-child(even) {
-  background-color: #f8f8f8;
-}
-section.currently {
-  color: white;
-  background-color: #303ab2;
-}
-section.skills {
-  color: white;
-  background-color: #2a2a2a;
-}
 @media only screen and (min-width: 530px) {
-  section {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .content {
     margin: 0 auto;
     max-width: 728px;
@@ -493,26 +464,42 @@ section.skills {
   p {
     font-size: 21px;
   }
-  .intro p:first-letter {
+  .intro p:first-child:first-letter {
     font-size: 70px;
     padding-right: 8px;
     padding-top: 22px;
   }
 }
+header {
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
 @media only screen and (min-width: 530px) {
   header {
-    position: fixed;
-    font-family: 'PT Sans', Arial, sans-serif;
-    color: black;
-    font-weight: 700;
-    letter-spacing: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.75);
+    padding: 30px 20px;
   }
+}
+.mugshot {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.masthead {
+  margin-bottom: 2rem;
+}
+.contact-links {
+  font-size: 0.8em;
+}
+.contact-links a {
+  margin: 0 0.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */

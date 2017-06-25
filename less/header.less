@@ -2,17 +2,34 @@
 
 
 header {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color: black;
+	font-weight: 700;
+	letter-spacing: 1;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;	
 	@media @medium-up {
-		position: fixed;
-		font-family: 'PT Sans', Arial, sans-serif;	
-		color: black;
-		font-weight: 700;
-		letter-spacing: 1;
-		width: 100%;
-		top: 0;
-		left: 0;
-		padding: 10px 20px;
-		text-transform: uppercase;
-		background:rgba(255,255,255,.75);
+		padding: 30px 20px;
+	}
+}
+
+.mugshot {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	display: inline-block;
+	margin-bottom: 2rem;
+	overflow: hidden;
+}
+
+.masthead {
+	margin-bottom: 2rem;
+}
+
+.contact-links {
+	font-size: 0.8em;
+	a {
+		margin: 0 0.5em;
 	}
 }
