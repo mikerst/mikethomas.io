@@ -413,6 +413,9 @@ body {
 section {
   padding: 30px 15px;
 }
+caption {
+  font-size: 13px;
+}
 p {
   font-size: 18px;
   letter-spacing: -0.004em;
@@ -446,7 +449,7 @@ a {
 }
 a {
   text-decoration: none;
-  border-bottom: 1px dotted #4a4a4a;
+  border-bottom: 1px dotted #cccccc;
 }
 a:visited {
   color: pink;
