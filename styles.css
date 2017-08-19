@@ -6,8 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
 html {
   line-height: 1.15;
   /* 1 */
@@ -401,14 +400,9 @@ template {
   all: unset;
 }
 body {
-  font-family: 'PT Serif', Georgia, serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   color: #2a2a2a;
-}
-@media only screen and (min-width: 950px) {
-  body {
-    border: 10px solid #f9f9f9;
-  }
 }
 section {
   padding: 30px 15px;
@@ -437,22 +431,22 @@ p strong {
   line-height: inherit;
   font-weight: 700;
 }
+h2,
+h3 {
+  font-family: 'Space Mono', Arial, sans-serif;
+}
 h2 {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 24px;
   margin: 0 0 20px;
   line-height: 1.4;
 }
-h1,
 a {
-  color: #303ab2;
-}
-a {
+  color: grey;
   text-decoration: none;
   border-bottom: 1px dotted #cccccc;
 }
 a:visited {
-  color: pink;
+  color: black;
 }
 a:hover {
   color: #333333;
@@ -470,7 +464,6 @@ footer {
   font-family: "PT Sans", Arial, sans-serif;
   padding: 25px;
   text-align: center;
-  background: #f9f9f9;
 }
 .copyright {
   margin-bottom: 10px;
@@ -481,7 +474,7 @@ footer {
 @media only screen and (min-width: 530px) {
   .content {
     margin: 0 auto;
-    max-width: 728px;
+    max-width: 700px;
   }
   p {
     font-size: 21px;
@@ -499,13 +492,12 @@ header {
   letter-spacing: 1;
   width: 100%;
   text-align: center;
-  text-transform: uppercase;
   padding: 60px 0 30px;
 }
 .mugshot {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
   display: inline-block;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -513,8 +505,29 @@ header {
 .masthead {
   margin-bottom: 2rem;
 }
+.masthead h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.masthead h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.masthead h2 .underlight {
+  position: relative;
+}
+.masthead h2 .underlight:before {
+  position: absolute;
+  content: " ";
+  bottom: 2px;
+  z-index: -2;
+  height: 8px;
+  width: 100%;
+  background: #FAE100;
+}
 .contact-links {
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 .contact-links a {
   margin: 0 0.5em;
