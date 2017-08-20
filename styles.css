@@ -402,6 +402,7 @@ template {
 body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
+  font-size: 100%;
   color: #2a2a2a;
 }
 section {
@@ -492,27 +493,40 @@ header {
   letter-spacing: 1;
   width: 100%;
   text-align: center;
-  padding: 60px 0 30px;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 530px) {
+  header {
+    padding: 60px 0 30px;
+  }
 }
 .mugshot {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   overflow: hidden;
+}
+@media only screen and (min-width: 530px) {
+  .mugshot {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 .masthead {
   margin-bottom: 2rem;
 }
 .masthead h1 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 .masthead h2 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .masthead h2 .underlight {
   position: relative;
@@ -526,11 +540,24 @@ header {
   width: 100%;
   background: #FAE100;
 }
+@media only screen and (min-width: 530px) {
+  .masthead h1 {
+    font-size: 1.8rem;
+  }
+  .masthead h2 {
+    font-size: 2rem;
+  }
+}
 .contact-links {
-  font-size: 1.2em;
+  font-size: 0.8rem;
 }
 .contact-links a {
   margin: 0 0.5em;
+}
+@media only screen and (min-width: 530px) {
+  .contact-links {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
