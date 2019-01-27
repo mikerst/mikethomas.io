@@ -5,7 +5,6 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  margin: 2em;
 }
 
 *, *:before, *:after {
@@ -25,6 +24,7 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* OK, let's get stylin' */
@@ -33,17 +33,16 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #111;
-  background: #eee;
-  height: 100%;
+  color: #eee;
+  background: #221C35;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1em;
-  margin: 0.5rem;
+  grid-gap: 2em;
+  margin: 2em;
 }
 
 section {
-  max-width: 30em;
+  max-width: ;
 }
 
 h1, h2 {
@@ -67,12 +66,12 @@ p {
 }
 
 a {
-  color: #111;
+  color: #eee;
   text-decoration: none;
   border-bottom: 2px dotted #0075B3 ;
 }
 a:visited {
-  color: #111;
+  color: inherit;
 }
 a:hover {
   color: #333333;
@@ -102,9 +101,25 @@ img {
 
 @media only screen and (min-width: 640px) {
   body {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+    margin: 4rem;
+  }
+  section:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 4em;
-    margin: 2rem;
+    margin: 4rem;
+  }
+  section:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
