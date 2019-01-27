@@ -1,121 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,600,700');
-body {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 100%;
-  color: #2a2a2a;
-  display: flex;flex-direction: column;align-items: center;justify-content: center;
-  height: 100%;
-}
-section {
-  padding: 0;
+/* ### Baselining ###  */
+
+/* Lovely simple CSS reset courtesy of: https://alligator.io/css/minimal-css-reset/*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 2em;
 }
 
-h2,
-h3 {
-  font-family: 'Space Mono', Arial, sans-serif;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-h2 {
-  font-size: 24px;
-  margin: 0 0 20px;
-  line-height: 1.4;
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* OK, let's get stylin' */
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111;
+  background: #eee;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4em;
+  margin: 2rem;
+}
+
+section {
+  max-width: 30em;
+}
+
+h1, h2 {
+  font-size:1em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+h2  {
+  margin-top: 3em;
+}
+
+h2:first-child {
+  margin-top:0;
+}
+
+p {
+  line-height: 1.414;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
 a {
-  color: grey;
+  color: #111;
   text-decoration: none;
-  border-bottom: 1px dotted #cccccc;
+  border-bottom: 2px dotted #0075B3 ;
 }
 a:visited {
-  color: black;
+  color: #111;
 }
 a:hover {
   color: #333333;
 }
-li {
-  margin-bottom: 0.4em;
-  line-height: 1.4;
+ul {
+  margin:0;
+  padding:0;
 }
+li {
+  line-height: 1.414;
+  list-style: none;
+  display: flex;
+  margin-bottom:0.5em;
+}
+li > span:first-child {
+  width: 4em;
+}
+
+li > span {
+  width: calc(100% - 4em);
+}
+
 img {
   width: 100%;
   height: auto;
 }
-footer {
-  color: grey;
-  font-family: "PT Sans", Arial, sans-serif;
-  padding: 25px;
-  text-align: center;
-}
-@media only screen and (min-width: 530px) {
-  .content {
-    margin: 0 auto;
-    max-width: 700px;
+
+@media only screen and (min-width: 640px) {
+  body {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-header {
-  font-family: 'PT Sans', Arial, sans-serif;
-  color: black;
-  font-weight: 700;
-  letter-spacing: 1;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin-bottom: 3rem;
-}
-@media only screen and (min-width: 530px) {
-  header {
-    padding: 0;
-  }
-}
-.mugshot {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 2rem;
-  display: inline-block;
-  overflow: hidden;
-}
-@media only screen and (min-width: 530px) {
-  .mugshot {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 3rem;
-    margin-bottom: 1rem;
-  }
-}
-.masthead {
-  margin-bottom: 2rem;
-}
-.masthead h1 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.masthead h2 {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
 
-@media only screen and (min-width: 530px) {
-  .masthead h1 {
-    font-size: 1.8rem;
-  }
-  .masthead h2 {
-    font-size: 2rem;
-  }
-}
 
-.contact-links {
-  font-size: 0.8rem;
-}
-.contact-links a {
-  margin: 0 0.5em;
-}
-
-@media only screen and (min-width: 530px) {
-  .contact-links {
-    font-size: 1.2rem;
-  }
-}
 
 
