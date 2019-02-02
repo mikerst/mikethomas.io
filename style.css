@@ -4,7 +4,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -32,7 +31,7 @@ img {
 body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   color: #eee;
   background: #221C35;
   display: grid;
@@ -46,7 +45,7 @@ section {
 }
 
 h1, h2 {
-  font-size:1em;
+  font-size:1.1em;
   margin-bottom: 1em;
   font-weight: 700;
 }
@@ -66,7 +65,7 @@ p {
 }
 
 a {
-  color: #eee;
+  color: #fff;
   text-decoration: none;
   border-bottom: 2px dotted #0075B3 ;
 }
@@ -113,9 +112,13 @@ img {
 
 @media only screen and (min-width: 1024px) {
   body {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 4em;
     margin: 4rem;
+    max-width: 70em;
+  }
+  section {
+    max-width: 30em;
   }
   section:first-child {
     grid-column-start: 1;
