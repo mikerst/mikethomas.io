@@ -73,8 +73,10 @@ a:visited {
   color: inherit;
 }
 a:hover {
-  color: #333333;
+  color: white;
+  border-bottom-color: white;
 }
+
 ul {
   margin:0;
   padding:0;
@@ -100,7 +102,7 @@ img {
 
 img.mike {
   max-width: 10em;
-  
+
   border-radius: 50%;
 }
 
