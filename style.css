@@ -28,7 +28,15 @@ img {
 
 /* OK, let's get stylin' */
 
+/* Light Mode */
 :root {
+  --bg-color: #f9f9f9;
+  --text-color: #010101;
+  --accent-color: #dbe2ef;
+}
+
+/* Dark Mode */
+:root[theme='dark'] {
   --bg-color: #010101;
   --text-color: #f9f7f7;
   --accent-color: #dbe2ef;
@@ -44,6 +52,29 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 2em;
   margin: 2em;
+}
+
+.mode-swap {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin:0;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#toggle-theme[theme='dark'] {
+  background: #010101;
+  border: none;
+  border: 2px solid white;
+}
+
+#toggle-theme {
+  background: #010101;
+  border:none;
 }
 
 section {

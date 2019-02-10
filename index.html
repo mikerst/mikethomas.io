@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html theme="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +11,14 @@
   	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<input class="mode-swap" type="button" value="" theme="dark" id="toggle-theme" />
 	<section>
 		<img class="mike" src="mike-alt.jpg" alt="">
 	</section>
 	<section>
 
 		<h1>Mike Thomas</h1>
+		
 		<p>Multi-disciplinary designer and Londoner, with a love of great coffee, old book smells, looking out for others, and perfect dropshots.</p>
 		<p>I'm currently approaching my sixth year at TotallyMoney, a FinTech scale-up near Silicon Roundabout, where I've worked across Brand, Marketing and Product teams, in an always-interesting, ever-evolving role.</p>
 
@@ -79,13 +82,13 @@
 				<span>'08</span> <span>Arrived in London as a self-employed designer-for-hire.</span>
 			</li>
 			<li>
-				<span>'08 🎓</span> <span>Completed MA Digital Art & Technology from <a title="i-DAT" target="_blank" href="https://www.plymouth.ac.uk/research/i-dat">i-DAT</a>.</span>
+				<span>'08</span> <span>Completed MA Digital Art & Technology from <a title="i-DAT" target="_blank" href="https://www.plymouth.ac.uk/research/i-dat">i-DAT</a>.</span>
 			</li>
 			<li>
 				<span>'06</span> <span>Got lost in Azeroth. Made some friends.</span>
 			</li>
 			<li>
-				<span>'05 🎓</span> <span>Completed BA (Hons) Graphic Design from <a title="Arts University Bournemouth" target="_blank" href="https://en.wikipedia.org/wiki/Arts_University_Bournemouth">AUB</a>.</span>
+				<span>'05</span> <span>Completed BA (Hons) Graphic Design from <a title="Arts University Bournemouth" target="_blank" href="https://en.wikipedia.org/wiki/Arts_University_Bournemouth">AUB</a>.</span>
 			</li>
 			<li>
 				<span>'03</span> <span>Summer internship creating 3D animations for POS display advertising.</span>
@@ -110,6 +113,21 @@
 		</ul>
 	</section>
 
+
+<script>
+	const toggleBtn = document.querySelector("#toggle-theme");
+	toggleBtn.addEventListener('click', e => {
+	  if(document.documentElement.hasAttribute('theme')){
+	    document.documentElement.removeAttribute('theme');
+	    toggleBtn.removeAttribute('theme');
+	  }
+	  else{
+	    document.documentElement.setAttribute('theme', 'dark');
+	    toggleBtn.setAttribute('theme', 'dark');
+	  }
+	});
+
+</script>
 	
 	
 	
