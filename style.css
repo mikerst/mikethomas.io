@@ -62,6 +62,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 15px;
+  outline:none;
   right: 15px;
   cursor: pointer;
 }
@@ -102,7 +103,7 @@ p {
 }
 
 a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   border-bottom: 2px dotted var(--accent-color);
 }
@@ -110,7 +111,7 @@ a:visited {
   color: inherit;
 }
 a:hover {
-  color: white;
+  color: var(--text-color);
   border-bottom-color: white;
 }
 
