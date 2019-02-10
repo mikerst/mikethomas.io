@@ -29,9 +29,9 @@ img {
 /* OK, let's get stylin' */
 
 :root {
-  --bg-color:#221C35;
-  --text-color: #eee;
-  --accent-color: #0075B3;
+  --bg-color: #010101;
+  --text-color: #f9f7f7;
+  --accent-color: #dbe2ef;
 }
 
 body {
