@@ -6,7 +6,7 @@
 	<title>Mike Thomas, multi-disciplinary designer and Londoner.</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
 	<meta name="description" content="Multi-disciplinary designer and Londoner, with a love of great coffee, old book smells, looking out for others, and perfect dropshots.">
-	<meta name="theme-color" content="#010101">
+	<meta name="theme-color" content="#010101" id="theme-color">
   	<link rel="shortcut icon" href="favicon.ico" />
   	<link rel="stylesheet" href="style.css" />
 </head>
@@ -117,14 +117,18 @@
 
 <script>
 	const toggleBtn = document.querySelector("#toggle-theme");
+	const themeColor = document.querySelector("#theme-color");
+
 	toggleBtn.addEventListener('click', e => {
 	  if(document.documentElement.hasAttribute('theme')){
 	    document.documentElement.removeAttribute('theme');
 	    toggleBtn.removeAttribute('theme');
+	    themeColor.setAttribute('content', 'white');
 	  }
 	  else{
 	    document.documentElement.setAttribute('theme', 'dark');
 	    toggleBtn.setAttribute('theme', 'dark');
+	    themeColor.setAttribute('content', '#010101');
 	  }
 	});
 
