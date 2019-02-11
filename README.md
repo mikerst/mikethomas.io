@@ -1,3 +1,3 @@
 # mikethomas.io
 
-Personal site, very much a work in progress.
+Personal site, eternal work-in-progress, openly designed.
