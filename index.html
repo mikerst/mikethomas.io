@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mike Thomas, multi-disciplinary designer and Londoner.</title>
 	<meta name="description" content="Multi-disciplinary designer and Londoner, with a love of great coffee, old book smells, looking out for others, and perfect dropshots.">
 	<meta name="theme-color" content="#010101" id="theme-color">
+
+	<title>Mike Thomas, multi-disciplinary designer and Londoner.</title>
+	
   	<link rel="shortcut icon" href="favicon.ico" />
   	<link rel="stylesheet" href="style.css" />
 </head>
@@ -115,21 +117,29 @@
 
 
 <script>
-	const toggleBtn = document.querySelector("#toggle-theme");
-	const themeColor = document.querySelector("#theme-color");
-
-	toggleBtn.addEventListener('click', e => {
-	  if(document.documentElement.hasAttribute('theme')){
-	    document.documentElement.removeAttribute('theme');
-	    toggleBtn.removeAttribute('theme');
-	    themeColor.setAttribute('content', 'white');
-	  }
-	  else{
-	    document.documentElement.setAttribute('theme', 'dark');
-	    toggleBtn.setAttribute('theme', 'dark');
-	    themeColor.setAttribute('content', '#010101');
-	  }
-	});
+	
+    const page = document.documentElement;
+    const themes = [
+		'dark',
+		'light',
+		'mindful'
+	];
+	var i = 0;	
+    function nextTheme() {
+	    i = i + 1; // increase i by one
+	    i = i % themes.length; // if we've gone too high, start from `0` again
+	    return themes[i]; // give us back the item of where we are now
+	}
+	document.querySelector('#toggle-theme').addEventListener(
+	    'click', // we want to listen for a click
+	    function (e) { // the e here is the event itself
+	        page.setAttribute('theme', nextTheme());
+	    }
+	);
+	
+	// Credit where it's due:
+	// Huge thanks to this answer on SO
+	// https://stackoverflow.com/questions/26944987/show-next-previous-item-of-an-array
 
 </script>
 	
