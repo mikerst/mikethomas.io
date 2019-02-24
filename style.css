@@ -44,9 +44,9 @@ img {
 
 /* Mindful Mode */
 :root[theme='mindful'] {
-  --bg-color: #5d5d5a;
-  --text-color: #fff4e3;
-  --accent-color: #ffcdab;
+  --bg-color:  #cccccc;
+  --text-color: #222222;
+  --accent-color: #ebf2fc;
 }
 
 body {
@@ -99,6 +99,8 @@ h1, h2 {
   margin-bottom: 1em;
   font-weight: 700;
 }
+
+
 
 h2  {
   margin-top: 3em;
@@ -155,9 +157,9 @@ img.mike {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 480px) {
   body {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 4em;
     margin: 4rem;
   }
@@ -185,5 +187,20 @@ img.mike {
 
 
 
+
+/*Logo*/
+
+svg {
+  fill: none;
+  overflow: visible;
+}
+
+rect{
+  
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  width: 20px;
+  height:20px;
+}
 
 
