@@ -72,6 +72,7 @@ body {
   outline:none;
   right: 15px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 :root[theme='dark'] #toggle-theme {
