@@ -13,7 +13,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 ol, ul {
@@ -44,8 +44,8 @@ img {
 
 /* Mindful Mode */
 :root[theme='mindful'] {
-  --bg-color:  #cccccc;
-  --text-color: #222222;
+  --bg-color:  #008BCD ;
+  --text-color: #FFFFFF;
   --accent-color: #ebf2fc;
 }
 
@@ -96,7 +96,7 @@ section {
 }
 
 h1, h2 {
-  font-size:1.1em;
+  font-size: 1.1em;
   margin-bottom: 1em;
   font-weight: 700;
 }
@@ -158,6 +158,21 @@ img.mike {
   border-radius: 50%;
 }
 
+
+svg {
+  fill: none;
+  overflow: visible;
+}
+
+rect{
+  
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  width: 20px;
+  height:20px;
+}
+
+
 @media only screen and (min-width: 480px) {
   body {
     grid-template-columns: 1fr;
@@ -172,7 +187,7 @@ img.mike {
 
 @media only screen and (min-width: 1024px) {
   body {
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 2fr 3fr 3fr;
     grid-gap: 4em;
     margin: 4rem;
     max-width: 90em;
@@ -189,19 +204,5 @@ img.mike {
 
 
 
-/*Logo*/
-
-svg {
-  fill: none;
-  overflow: visible;
-}
-
-rect{
-  
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
-  width: 20px;
-  height:20px;
-}
 
 

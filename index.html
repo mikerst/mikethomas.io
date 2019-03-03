@@ -1,5 +1,5 @@
 <!doctype html>
-<html theme="light">
+<html theme="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +14,9 @@
 <body>
 	<input class="mode-swap" type="button" value="" theme="dark" id="toggle-theme" />
 	<section>
-	    <img class="mike" src="mike.jpg" alt="">
-		<!--<svg class="logo" width="100" height="60">
-			<g fill="blue">
+	    
+		<!-- <svg class="logo" width="100" height="60">
+			<g fill="white">
 				<rect x="0" y="0" width="20" height="20" ></rect>
 				<rect x="0" y="20" width="20" height="20"  ></rect>
 				<rect x="0" y="40" width="20" height="20"  ></rect>
@@ -27,7 +27,8 @@
 				<rect x="80" y="20" width="20" height="20"  ></rect>
 				<rect x="80" y="40" width="20" height="20"  ></rect>
 			</g>
-		</svg>-->
+		</svg> -->
+		<img class="mike" src="mike.jpg" alt="">
 		<h2>Mike Thomas</h2>
 		<ul>
 			<li>
@@ -40,20 +41,18 @@
 				<span>Else</span><span><a title="My LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/mikerst/">LinkedIn</a> / <a title="My Github prilfe" target="_blank" href="https://github.com/mikerst">Github</a> / <a title="My Pinterest profile" target="_blank" href="https://www.pinterest.co.uk/mikerst/">Pinterest</a></span>
 			</li>
 		</ul>
+
 	</section>
 	<section>
 
-
+		<h2>About</h2>
 		
+		<p>Multi-disciplinary designer, with a love of great coffee, old book smells, looking out for others, and perfect dropshots.</p>
 
-		<h1>Bio</h1>
-		
-		<p>Multi-disciplinary designer and Londoner, with a love of great coffee, old book smells, looking out for others, and perfect dropshots.</p>
-
-		<p>I'm currently approaching my sixth year at TotallyMoney, a FinTech scale-up near Silicon Roundabout, where I've worked across Brand, Marketing and Product teams, in an always-interesting, ever-evolving role.</p>
+		<p>I've just completed a six year stint at TotallyMoney, a FinTech scale-up near Silicon Roundabout, where I've worked across Brand, Marketing and Product teams, in an always-interesting, ever-evolving role.</p>
 
 		<p>Throughout this time, and prior, I've had the good fortune to work with clients and organisations such as the NHS, DB Schenker, Cognita Schools, Capital One, MBNA, Barclaycard, Southbank International School and many, many more.</p>
-		<p>Portfolio available on request.</p>
+		<p>Right now I'm taking a short break, and looking for new opportunities to commence in the spring. Portfolio available on request.</p>
 		
 		<h2>Career</h2>
 		<ul>
@@ -102,8 +101,11 @@
 	</section>
 
 	<section>
+
+		<h2>Writing</h2>
+		<p>Very much a "watch this space" situation right now — I'm in the process of putting together a first batch of articles for publication. It's just something I really really want to do.</p>
 		
-		<h2>Inputs</h2>
+		<h2>Miscellany</h2>
 		<ul>
 			<li>
 				<span>📖</span> <span><a title="A More Beautiful Question" target="_blank" href="https://www.amazon.co.uk/More-Beautiful-Question-Inquiry-Breakthrough/dp/1620401452">A More Beautiful Question</a></span>
@@ -115,26 +117,24 @@
 				<span>🎮</span> <span><a title="Resident Evil 2 Remake" target="_blank" href="https://www.residentevil2.com/">Resident Evil 2 (2019)</a></span>
 			</li>
 			<li>
-				<span>📺</span> <span><a title="Nightflyers" target="_blank" href="https://www.imdb.com/title/tt6903284/">Nightflyers</a></span>
+				<span>📺</span> <span><a title="The Expanse" target="_blank" href="https://www.netflix.com/gb/title/80029822">The Expanse</a></span>
 			</li>
 			<li>
-				<span>🍸</span> <span><a title="Negroni" target="_blank" href="https://en.wikipedia.org/wiki/Negroni">Negroni</a></span>
+				<span>🍸</span> <span><a title="Whiskey Sour" target="_blank" href="https://en.wikipedia.org/wiki/Whiskey_sour">Whiskey Sour</a></span>
 			</li>
-			
-		</ul>
-		
-		<h2>Misc</h2>
-		<ul>
 			<li>
 				<span>🇪🇺 </span> <span>In ❤️</span></li>
 			<li>
 				<span>👓</span> <span><a title="Herbrand by Cubitts" target="_blank" href="https://www.cubitts.co.uk/glasses/herbrand?color=dark-turtle">Herbrand by Cubitts</a></span>
 			</li>
+			
 		</ul>
+		
 	</section>
 
 <script src="anime.min.js"></script>
 <script>
+	// Invoke Anime JS on the logo SVG
 	anime({
 	  targets: '.logo rect',
 	  scaleY: [0.1, 1],
@@ -143,15 +143,15 @@
   	  delay: anime.stagger(100),
   	  loop: false
 	});
-</script>
 
-<script>
+	// Some console info for curious onlookers
 	console.info("Hand-made by Mike");
-	
+
+	// Simple theme switcher
     const page = document.documentElement;
     const themes = [
-		'light',
 		'dark',
+		'light',
 		'mindful'
 	];
 	var i = 0;	
@@ -168,7 +168,7 @@
 	);
 	
 	// Credit where it's due:
-	// Huge thanks to this answer on SO
+	// Huge thanks to this answer on S.O.
 	// https://stackoverflow.com/questions/26944987/show-next-previous-item-of-an-array
 
 </script>
