@@ -13,7 +13,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 ol, ul {
@@ -37,14 +37,14 @@ img {
 
 /* Dark Mode */
 :root[theme='dark'] {
-  --bg-color: #010101;
+  --bg-color: #111;
   --text-color: #f9f7f7;
-  --accent-color: #dbe2ef;
+  --accent-color: #008BCD;
 }
 
 /* Mindful Mode */
 :root[theme='mindful'] {
-  --bg-color:  #008BCD ;
+  --bg-color:  #008BCD;
   --text-color: #FFFFFF;
   --accent-color: #ebf2fc;
 }
@@ -60,6 +60,8 @@ body {
   grid-gap: 2em;
   margin: 2em;
 }
+
+
 
 .mode-swap {
   width: 15px;
@@ -120,7 +122,7 @@ p {
 a {
   color: var(--text-color);
   text-decoration: none;
-  border-bottom: 2px dotted var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 a:visited {
   color: inherit;
@@ -142,6 +144,7 @@ li {
 }
 li > span:first-child {
   width: 4em;
+  font-weight: 100;
 }
 
 li > span {
@@ -187,10 +190,10 @@ rect{
 
 @media only screen and (min-width: 1024px) {
   body {
-    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 4em;
     margin: 4rem;
-    max-width: 90em;
+    max-width: 70em;
   }
   section {
     max-width: 30em;
