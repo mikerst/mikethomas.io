@@ -119,6 +119,11 @@ p {
   margin-bottom: 1em;
 }
 
+p.opener {
+  font-size:1.6em;
+  font-weight: 600;
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -143,7 +148,7 @@ li {
   margin-bottom:0.5em;
 }
 li > span:first-child {
-  width: 4em;
+  width: 6em;
   font-weight: 100;
 }
 
@@ -190,13 +195,12 @@ rect{
 
 @media only screen and (min-width: 1024px) {
   body {
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 5fr 5fr 3fr;
     grid-gap: 4em;
-    margin: 4rem;
-    max-width: 70em;
+    margin: 5rem;
   }
   section {
-    max-width: 30em;
+ 
   }
   section:first-child {
     grid-column-start: 1;
