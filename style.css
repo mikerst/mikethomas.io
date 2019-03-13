@@ -44,9 +44,9 @@ img {
 
 /* Mindful Mode */
 :root[theme='mindful'] {
-  --bg-color:  #008BCD;
+  --bg-color:  #130B30;
   --text-color: #FFFFFF;
-  --accent-color: #ebf2fc;
+  --accent-color: #2CD4AE;
 }
 
 body {
@@ -55,13 +55,9 @@ body {
   font-size: 15px;
   color: var(--text-color);
   background: var(--bg-color);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2em;
-  margin: 2em;
+  
+  
 }
-
-
 
 .mode-swap {
   width: 15px;
@@ -93,8 +89,14 @@ body {
   border: 2px solid var(--text-color);
 }
 
+div.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  margin: 2em;
+}
+
 section {
-  max-width: ;
 }
 
 h1, h2 {
@@ -102,8 +104,6 @@ h1, h2 {
   margin-bottom: 1em;
   font-weight: 700;
 }
-
-
 
 h2  {
   margin-top: 3em;
@@ -120,8 +120,10 @@ p {
 }
 
 p.opener {
-  font-size:1.6em;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.8em;
+  line-height: 1.2;
 }
 
 a {
@@ -167,13 +169,13 @@ img.mike {
 }
 
 
+
 svg {
   fill: none;
   overflow: visible;
 }
 
-rect{
-  
+rect {
   transform-origin: 50% 50%;
   transform-box: fill-box;
   width: 20px;
@@ -182,7 +184,7 @@ rect{
 
 
 @media only screen and (min-width: 480px) {
-  body {
+  div.main {
     grid-template-columns: 1fr;
     grid-gap: 4em;
     margin: 4rem;
@@ -191,20 +193,34 @@ rect{
     grid-column-start: 1;
     grid-column-end: 3;
   }
+  p.opener {
+    font-size:1.6em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 1.2em;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
-  body {
-    grid-template-columns: 5fr 5fr 3fr;
+@media only screen and (min-width: 1025px) {
+  div.main {
+    grid-template-columns: 3fr 5fr;
     grid-gap: 4em;
+    max-width: 65%;
     margin: 5rem;
   }
-  section {
- 
+  section.intro {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row: 1;
   }
-  section:first-child {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  section.bio {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+  section.misc {
+    grid-column: 1 / 2;
+    grid-row: 2;
   }
 }
 
